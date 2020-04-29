@@ -36,7 +36,8 @@ class Count extends Component {
                     <h1>{this.state.time}</h1>
 
                     <button onClick={this.timer} id="start">Start</button>
-                    
+                    <button onClick={this.timer} id="pause">Pause</button>
+                    <button onClick={this.timer} id="reset">Reset</button>
             </div>
         )
     }

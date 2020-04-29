@@ -1,12 +1,11 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './App.css';
-import Count from './components/Count.js';
+import Count from './Components/Count';
 
-class App extends Component() {
-  render () {
+function App () {
     return (
       <div>
-
+ <Count />
       </div>
     )
   }

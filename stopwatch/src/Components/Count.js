@@ -19,9 +19,9 @@ class Count extends Component {
             let id = setInterval(this.startTimer ,1000);
             this.setState({clearId:id});
             // to update state correctly
-        } else if (buttonClicked === 'reset') {
+        } else if (clickButton === 'reset') {
             this.setState({time:0});
-        } else if (buttonClicked === 'pause') {
+        } else if (clickButton === 'pause') {
             clearInterval(this.state.clearId);
         }
     }
@@ -38,7 +38,7 @@ class Count extends Component {
                     <button onClick={this.timer} id="start">Start</button>
                     <button onClick={this.timer} id="pause">Pause</button>
                     <button onClick={this.timer} id="reset">Reset</button>
-//this populates the buttons and the timer on the page
+{/* //this populates the buttons and the timer on the page */}
             </div>
         )
     }

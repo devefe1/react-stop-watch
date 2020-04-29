@@ -32,7 +32,7 @@ class Count extends Component {
 
     render() {
         return (
-            <div>
+            <div id="buttons">
                     <h1>{this.state.time}</h1>
 
                     <button onClick={this.timer} id="start">Start</button>

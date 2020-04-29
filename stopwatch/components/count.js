@@ -29,6 +29,17 @@ class Count extends Component {
     startTimer(){
         setInterval(this.setState({ time: this.state.time + 1}), 1000);
     }
+
+    render() {
+        return (
+            <div>
+                    <h1>{this.state.time}</h1>
+
+                    <button onClick={this.timer} id="start">Start</button>
+                    
+            </div>
+        )
+    }
 }
 
 
